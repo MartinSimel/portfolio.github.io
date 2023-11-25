@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.marto{
+    position: relative;
+    background-color: rgb(245, 245, 158);
+    width: 100%;
+    height: 100vh;
+}
+.menu{
+    background-color: rgb(15, 145, 225);
+    width: 100%;
+}
+.active,nav ul li a:hover{
+    background: #2bab0d;
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 9px;
+    line-height: 75px;
+    margin: auto;
+    padding: 20px 550px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+.marto1{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.marto1 h1{
+    font-size: 50px;
+    margin-bottom: 17px;
+    color: #212121;
+    font-family: 'Times New Roman';
+}
+span{
+    color: orange;
+}
+.marto1 p{
+    color: #555;
+    font-family: serif;
+    font-size: 20px;
+}
+.martoimg{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.martoimg img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s left 1s;
+}
+.martoimg:hover .shape{
+    bottom: 40px;
+}
+.martoimg:hover .shape1{
+    left: 45%;
+}
+.footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    height: 400px;
+    color: white;
+    font-family: 'Lucida Sans';
+    padding-top: 40px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+} 
+.footer h3{
+    font-size: 39px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3cm;
+}
+.footer p{
+    font-size: 20px ;
+    font-weight: 200;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li{
+    margin: 0 20px;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+}
+.social a i{
+    font-size: 20px;
+    transition: color .4s ease;
+}
+.social a:hover i{
+    color:  aqua;
+}
+.footer1{
+    background-color: black;
+    width: 200vh;
+    padding: 16px 0;
+    text-align: center;
+}
+.footer1 p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+.marto2{
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(#033747,#012733);
+}
+.two{
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgb(0,0,0,0.3);
+    padding: 20px;
+    margin: 8% auto;
+    text-align: center;
+    height: 350px;
+}
+.one{
+    
+}
