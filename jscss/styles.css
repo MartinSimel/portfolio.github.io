@@ -3,12 +3,20 @@
     padding: 0;
     font-family: sans-serif;
 }
-.marto{
+.marto {
     position: relative;
     background-color: rgb(245, 245, 158);
     width: 100%;
     height: 100vh;
+    /* Add background image */
+    background-image: url('/img/marto.jpg'); /* Replace 'path/to/your/image.jpg' with your image file path */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-attachment: fixed;
+    /* You can adjust other background properties as needed */
 }
+
+
 .menu{
     background-color: rgb(15, 145, 225);
     width: 100%;
@@ -44,14 +52,14 @@ nav ul li a{
 .marto1 h1{
     font-size: 50px;
     margin-bottom: 17px;
-    color: #212121;
+    color: #ffffff;
     font-family: 'Times New Roman';
 }
 span{
     color: orange;
 }
 .marto1 p{
-    color: #555;
+    color: #ffffff;
     font-family: serif;
     font-size: 20px;
 }
@@ -86,6 +94,125 @@ span{
     font-family: 'Lucida Sans';
     padding-top: 40px;
 }
+.ul {
+    font-family: 'Roboto condensed',sans-serif;
+    display: flex;
+
+}
+.li {
+    list-style: none;
+    margin: 0 5px;
+
+}
+
+.fa-brands{
+    color: #262626;
+    font: s 40px;
+    line-height: 80px;
+    transition: 5s;
+    padding-right: 14px;
+
+
+}
+a {
+    width: 21px;
+    height: 80px;
+    background: #fff;
+    text-decoration: none;
+    align-content: center;
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg);
+    translate: (0 ,0);
+    box-shadow: -20px 20px 10px #000000;
+
+}
+a span {
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    letter-spacing: 4px;
+    transition: 5s;
+
+}
+a::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    top: 10px;
+    left: -20px;
+    transform: rotate(0deg) skew(-4deg);
+
+
+}
+a::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    bottom: -20px;
+    left: -10px;
+    transform: rotate(0deg) skew(-45deg);
+
+}
+a:hover{
+    transform: rotate(-30deg) skew(24deg)
+    translate(20px, -15px);
+    box-shadow: #ffffff;
+}
+li:hover .fa-brands, 
+li:hover span{
+    color: #fff;
+
+
+}
+li:hover:nth-child(1){
+    & a {
+        background: #3b5998;
+
+        &::before {
+            background: #365492;
+
+        }
+        &::after {
+            background:#4a69ad;
+
+        }
+    }
+}
+li:hover:nth-child(2){
+    & a {
+        background: rgb(204, 213, 231);
+
+        &::before {
+            background: #08e0b9;
+
+        }
+        &::after {
+            background: ;
+        }
+    }
+}
+li:hover:nth-child(3){
+    & a {
+        background: #983b3b;
+
+        &::before {
+            background: rgb(232, 22, 14) 96, 253);
+
+        }
+        &::after {
+            background: #b33a2b;
+        }
+    }
+}
+
 .footer{
     display: flex;
     align-items: center;
